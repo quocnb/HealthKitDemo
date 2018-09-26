@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79171045215A08A000A046A5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79171044215A08A000A046A5 /* HealthKit.framework */; };
+		7917104D215A2C3C00A046A5 /* Prancercise_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917104C215A2C3C00A046A5 /* Prancercise_TrackerTests.swift */; };
 		9F270C321EBE47EB0075412F /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F270C311EBE47EB0075412F /* WorkoutSession.swift */; };
 		AC891D731EDDBDC500A0F84A /* WorkoutDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC891D721EDDBDC500A0F84A /* WorkoutDataStore.swift */; };
 		AC8EABE61EAEA833002DD041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8EABE51EAEA833002DD041 /* Assets.xcassets */; };
@@ -25,7 +27,22 @@
 		ACF4F9261EB215DE0031154C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF4F9241EB215DE0031154C /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7917104F215A2C3C00A046A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC1BA5041EAE5D2F00C99FE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC1BA50B1EAE5D2F00C99FE3;
+			remoteInfo = "Prancercise Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		79171042215A089F00A046A5 /* Prancercise Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Prancercise Tracker.entitlements"; path = "Prancercise Tracker/Prancercise Tracker.entitlements"; sourceTree = SOURCE_ROOT; };
+		79171044215A08A000A046A5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7917104A215A2C3C00A046A5 /* Prancercise TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prancercise TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917104C215A2C3C00A046A5 /* Prancercise_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prancercise_TrackerTests.swift; sourceTree = "<group>"; };
+		7917104E215A2C3C00A046A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F270C311EBE47EB0075412F /* WorkoutSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = SOURCE_ROOT; };
 		AC1BA50C1EAE5D2F00C99FE3 /* Prancercise Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prancercise Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC891D721EDDBDC500A0F84A /* WorkoutDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutDataStore.swift; path = "Prancercise Tracker/WorkoutDataStore.swift"; sourceTree = SOURCE_ROOT; };
@@ -47,21 +64,48 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC1BA5091EAE5D2F00C99FE3 /* Frameworks */ = {
+		79171047215A2C3C00A046A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC1BA5091EAE5D2F00C99FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79171045215A08A000A046A5 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79171043215A08A000A046A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79171044215A08A000A046A5 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7917104B215A2C3C00A046A5 /* Prancercise TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7917104C215A2C3C00A046A5 /* Prancercise_TrackerTests.swift */,
+				7917104E215A2C3C00A046A5 /* Info.plist */,
+			);
+			path = "Prancercise TrackerTests";
+			sourceTree = "<group>";
+		};
 		AC1BA5031EAE5D2F00C99FE3 = {
 			isa = PBXGroup;
 			children = (
 				AC1BA50E1EAE5D2F00C99FE3 /* Prancercise Tracker */,
+				7917104B215A2C3C00A046A5 /* Prancercise TrackerTests */,
 				AC1BA50D1EAE5D2F00C99FE3 /* Products */,
+				79171043215A08A000A046A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				AC1BA50C1EAE5D2F00C99FE3 /* Prancercise Tracker.app */,
+				7917104A215A2C3C00A046A5 /* Prancercise TrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +121,7 @@
 		AC1BA50E1EAE5D2F00C99FE3 /* Prancercise Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				79171042215A089F00A046A5 /* Prancercise Tracker.entitlements */,
 				AC1BA52F1EAE5E5400C99FE3 /* View Controllers */,
 				AC8EABDB1EAE88DB002DD041 /* Models */,
 				AC8EABE71EAEA83F002DD041 /* AppDelegate.swift */,
@@ -125,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		79171049215A2C3C00A046A5 /* Prancercise TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79171051215A2C3C00A046A5 /* Build configuration list for PBXNativeTarget "Prancercise TrackerTests" */;
+			buildPhases = (
+				79171046215A2C3C00A046A5 /* Sources */,
+				79171047215A2C3C00A046A5 /* Frameworks */,
+				79171048215A2C3C00A046A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79171050215A2C3C00A046A5 /* PBXTargetDependency */,
+			);
+			name = "Prancercise TrackerTests";
+			productName = "Prancercise TrackerTests";
+			productReference = 7917104A215A2C3C00A046A5 /* Prancercise TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AC1BA50B1EAE5D2F00C99FE3 /* Prancercise Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC1BA51E1EAE5D2F00C99FE3 /* Build configuration list for PBXNativeTarget "Prancercise Tracker" */;
@@ -148,15 +212,25 @@
 		AC1BA5041EAE5D2F00C99FE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Razeware LLC";
 				TargetAttributes = {
+					79171049215A2C3C00A046A5 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC1BA50B1EAE5D2F00C99FE3;
+					};
 					AC1BA50B1EAE5D2F00C99FE3 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = N79LQXAXD6;
+						DevelopmentTeam = V93BAW6D7J;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -174,11 +248,19 @@
 			projectRoot = "";
 			targets = (
 				AC1BA50B1EAE5D2F00C99FE3 /* Prancercise Tracker */,
+				79171049215A2C3C00A046A5 /* Prancercise TrackerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		79171048215A2C3C00A046A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC1BA50A1EAE5D2F00C99FE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +274,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		79171046215A2C3C00A046A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7917104D215A2C3C00A046A5 /* Prancercise_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC1BA5081EAE5D2F00C99FE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +304,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		79171050215A2C3C00A046A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC1BA50B1EAE5D2F00C99FE3 /* Prancercise Tracker */;
+			targetProxy = 7917104F215A2C3C00A046A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AC8EABFB1EAEA8B2002DD041 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -234,6 +332,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		79171052215A2C3C00A046A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Prancercise TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocnb.Prancercise-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prancercise Tracker.app/Prancercise Tracker";
+			};
+			name = Debug;
+		};
+		79171053215A2C3C00A046A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Prancercise TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocnb.Prancercise-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prancercise Tracker.app/Prancercise Tracker";
+			};
+			name = Release;
+		};
 		AC1BA51C1EAE5D2F00C99FE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,10 +492,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N79LQXAXD6;
+				CODE_SIGN_ENTITLEMENTS = "Prancercise Tracker/Prancercise Tracker.entitlements";
+				DEVELOPMENT_TEAM = V93BAW6D7J;
 				INFOPLIST_FILE = "Prancercise Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Razeware.Prancercise-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocnb.Prancercise-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -359,10 +507,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N79LQXAXD6;
+				CODE_SIGN_ENTITLEMENTS = "Prancercise Tracker/Prancercise Tracker.entitlements";
+				DEVELOPMENT_TEAM = V93BAW6D7J;
 				INFOPLIST_FILE = "Prancercise Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Razeware.Prancercise-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quocnb.Prancercise-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -372,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79171051215A2C3C00A046A5 /* Build configuration list for PBXNativeTarget "Prancercise TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79171052215A2C3C00A046A5 /* Debug */,
+				79171053215A2C3C00A046A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC1BA5071EAE5D2F00C99FE3 /* Build configuration list for PBXProject "Prancercise Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
